@@ -1,0 +1,5 @@
+.button_type_play {
+    size: 32px 28px;
+    padding: 0;
+    background-image: url('../../../images/player/play-button.svg');
+}

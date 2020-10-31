@@ -1,0 +1,6 @@
+.button_type_pause {
+    size: 32px 28px;
+    padding: 0;
+    background-image: url('../../../images/player/pause-button.svg');
+    background-position: center;
+}

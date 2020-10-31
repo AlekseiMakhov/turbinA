@@ -1,0 +1,11 @@
+.feedback__input {
+    margin: 0 0 16px;
+    width: 597px;
+    border-radius: 50%;
+    padding-left: 24px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 22px;
+    height: 60px;
+}

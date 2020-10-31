@@ -1,0 +1,5 @@
+.page__bg {
+    position: fixed;
+    object-fit: fill;
+    background-position: center;
+}
