@@ -12,6 +12,9 @@
     opacity: 1;
     outline: none;
     border: 2px solid white;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility .3s, opacity .3s linear;
 }
 
 .button:hover {

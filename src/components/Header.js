@@ -5,7 +5,9 @@ import Menu from './Menu';
 function Header() {
     return (
         <header className='header'>
-            <img className='header__logo' src={logo}/>
+            <h1>
+                <img className='header__logo' src={logo} alt='турбина' />
+            </h1>
             <Menu />
         </header>
     );

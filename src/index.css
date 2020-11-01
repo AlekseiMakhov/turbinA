@@ -19,3 +19,5 @@
 @import url('../src/blocks/title/title.css');
 @import url('../src/blocks/player/player.css');
 @import url('../src/blocks/song/song.css');
+@import url('../src/blocks/container/container.css');
+@import url('../src/blocks/container/_invisible/container_invisible.css');

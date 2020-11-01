@@ -6,5 +6,7 @@
     line-height: 27px;
     color: white;
     align-self: center;
-    /* grid: 1 1; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
