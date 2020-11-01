@@ -1,0 +1,9 @@
+.song__ruler {
+    border: 3px solid rgba(243, 243, 243, .3);
+    width: calc(100% - 40px);
+    grid-row: 2;
+    grid-column: span;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}

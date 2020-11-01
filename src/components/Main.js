@@ -18,6 +18,7 @@ import {
 function Main() {
     return (
         <>
+            <div className='title'></div>
             <Player />
                 
             <section className='info'>

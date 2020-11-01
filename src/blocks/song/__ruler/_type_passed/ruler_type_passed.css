@@ -1,0 +1,5 @@
+.song__ruler_type_passed {
+    border-color: white;
+    width: 50%;
+    z-index: 1;
+}

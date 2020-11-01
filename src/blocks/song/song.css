@@ -1,0 +1,14 @@
+@import url('./__text/song__text.css');
+@import url('./__ruler/song__ruler.css');
+@import url('./__ruler/_type_passed/ruler_type_passed.css');
+
+.song {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto max-content;
+    grid-template-rows: min-content min-content;
+    row-gap: 14px;
+    column-gap: 30px;
+    padding: 0 20px;
+    position: relative;
+}

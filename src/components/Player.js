@@ -8,10 +8,10 @@ function Player() {
             <section className='player'>
                 <button type='button' className='button button_type_play'></button>
                 <Song />
-                <button type='button' className='button button_type_switch-button'>text</button>
+                <button type='button' className='button button_type_switch-button button_invisible'>text</button>
                 <button type='button' className='button button_type_expand'></button>
             </section>
-            <SongContainer />
+            {/* <SongContainer /> */}
         </>
     );
 }

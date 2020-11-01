@@ -1,5 +1,7 @@
 .button_type_collapse {
-    size: 24px 24px;
+    width: 24px;
+    height: 24px;
     padding: 0;
+    border: 1px;
     background-image: url('../../../images/player/collapse-button.svg');
 }

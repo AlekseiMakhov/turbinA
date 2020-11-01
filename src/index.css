@@ -1,3 +1,5 @@
+@import url('./vendor/normalize.css');
+@import url('./vendor/fonts/Inter/inter.css');
 @import url('../src/blocks/page/page.css');
 @import url('../src/blocks/header/header.css');
 @import url('../src/blocks/button/button.css');
@@ -8,8 +10,12 @@
 @import url('../src/blocks/button/_invisible/button_invisible.css');
 @import url('../src/blocks/button/_type_play/button_type_play.css');
 @import url('../src/blocks/button/_type_pause/button_type_pause.css');
+@import url('../src/blocks/button/_type_menu/button_type_menu.css');
+@import url('../src/blocks/button/_type_check/button_type_check.css');
+@import url('../src/blocks/button/_type_submit/button_type_submit.css');
 @import url('../src/blocks/feedback/feedback.css');
 @import url('../src/blocks/footer/footer.css');
 @import url('../src/blocks/info/info.css');
+@import url('../src/blocks/title/title.css');
 @import url('../src/blocks/player/player.css');
 @import url('../src/blocks/song/song.css');
