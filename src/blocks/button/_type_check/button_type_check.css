@@ -1,6 +1,12 @@
 .button_type_check {
-    border-radius: 50%px;
     width: 27px;
     height: 27px;
     margin-right: 14px;
+}
+
+@media screen and (max-width: 620px) {
+    .button_type_check {
+        width: 19px;
+        height: 19px;
+    }
 }

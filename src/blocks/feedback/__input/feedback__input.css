@@ -6,8 +6,15 @@
     text-align: left;
     font-size: 18px;
     font-weight: normal;
-    line-height: 22px;
+    line-height: 121%;
     height: 60px;
     outline: none;
     border: 2px solid black;
+}
+
+@media screen and (max-width: 620px) {
+    .feedback__input {
+        height: 36px;
+        font-size: 12px;
+    }
 }

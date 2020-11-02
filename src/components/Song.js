@@ -1,15 +1,17 @@
 import React from 'react';
 
-function Song() {
+
+function Song({ isExpanded, text }) {
     return (
-        <div className='song'>
-            <h3 className='song__text song__text_scrolled'>Назвsdgeeeeegsdffffffffffffffffание песни, автор</h3>
+        <div className={`song ${isExpanded ? '' : 'song_type_collapse'}`}>
+            <h3 className='song__text'>Author - Song title</h3>
             <p className='song__text'>3:22</p>
             <div>
                 <button className='song__ruler'>
                     <div className='song__ruler song__ruler_type_passed'></div>
                 </button>
-                <button type='button' className='button button_type_switch-button button_invisible'>text</button>
+                {isExpanded && <button id='switch' type='button' className='button button_type_switch'>{text}</button>}
+                
             </div>
         </div>
     );

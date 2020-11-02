@@ -6,7 +6,7 @@
 @import url('../src/blocks/button/_type_collapse/button_type_collapse.css');
 @import url('../src/blocks/button/_type_dark/button_type_dark.css');
 @import url('../src/blocks/button/_type_expand/button_type_expand.css');
-@import url('../src/blocks/button/_type_switch-button/button_type_switch-button.css');
+@import url('../src/blocks/button/_type_switch/button_type_switch.css');
 @import url('../src/blocks/button/_invisible/button_invisible.css');
 @import url('../src/blocks/button/_type_play/button_type_play.css');
 @import url('../src/blocks/button/_type_pause/button_type_pause.css');
@@ -18,6 +18,8 @@
 @import url('../src/blocks/info/info.css');
 @import url('../src/blocks/title/title.css');
 @import url('../src/blocks/player/player.css');
+@import url('../src/blocks/player/_expanded/player_expanded.css');
 @import url('../src/blocks/song/song.css');
+@import url('../src/blocks/song/_type_collapse/song_type_collapse.css');
 @import url('../src/blocks/container/container.css');
-@import url('../src/blocks/container/_invisible/container_invisible.css');
+@import url('../src/blocks/container/_type_scrolled/container_type_scrolled.css');

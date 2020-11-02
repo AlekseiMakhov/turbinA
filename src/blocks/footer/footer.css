@@ -6,3 +6,10 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 620px) {
+    .footer {
+        width: calc(100%-40px);
+        padding: 30px 20px;
+    }
+}

@@ -1,11 +1,18 @@
 .button_type_menu {
     margin-bottom: 10px;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
     height: 20px;
     list-style: none;
 }
 
 .button_type_menu:last-of-type {
     margin-bottom: 16px;
+}
+
+@media screen and (max-width: 620px) {
+    .button_type_menu {
+        height: 12px;
+        justify-self: flex-start;
+    }
 }

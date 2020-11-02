@@ -1,0 +1,15 @@
+.container_type_scrolled {
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(243, 243, 243, 0.3) rgba(255, 255, 255, 0.1);
+}
+
+.container::-webkit-scrollbar {
+    width: 3px;
+  }
+.container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+.container::-webkit-scrollbar-thumb {
+    background-color: rgba(243, 243, 243, 0.3);
+}

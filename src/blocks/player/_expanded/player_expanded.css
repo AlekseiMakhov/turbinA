@@ -1,3 +1,12 @@
 .player_expanded {
-    margin-top: calc(100vh - 700px);
+    margin-top: calc(100vh - 500px);
+}
+
+@media screen and (max-width: 620px) {
+    
+    .player_expanded {
+        margin-top: calc(100vh - 550px);
+    }
+
+ 
 }

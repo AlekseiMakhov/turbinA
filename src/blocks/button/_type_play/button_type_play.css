@@ -5,5 +5,16 @@
     background-image: url('../../../images/player/play-button.svg');
     background-position: center;
     background-repeat: no-repeat;
+    object-fit: contain;
+    background-size: 60%;
     border: none;
+}
+
+@media screen and (max-width: 620px) {
+    .button_type_play {
+        width: 20px;
+        height: 20px;
+        background-size: 80%;
+        margin-top: 3px;
+    }
 }

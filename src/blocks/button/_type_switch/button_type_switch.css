@@ -1,0 +1,13 @@
+.button_type_switch {
+    width: 147px;
+}
+
+@media screen and (max-width: 620px) {
+    .button_type_switch {
+        position: absolute;
+        height: 32px;
+        width: 100%;
+        top: 50px;
+        left: 0;
+    }
+}

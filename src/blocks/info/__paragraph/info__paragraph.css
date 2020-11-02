@@ -4,5 +4,12 @@
     color: black;
     font-size: 18px;
     font-weight: normal;
-    line-height: 22px;
+    line-height: 121%;
+}
+
+@media screen and (max-width: 620px) {
+    .info__paragraph {
+        margin: 10px 0;
+        font-size: 12px;
+    }
 }

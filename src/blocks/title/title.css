@@ -1,11 +1,11 @@
 .title {
+    position: absolute;
     margin: 0;
     width: 86%;
-    padding-left: calc(14%);
-    /* padding-bottom: 39px; */
-    height: 272px;
-    background-image: url('../../images/main-title.svg');
+    padding-left: calc(7%);
+    max-height: 272px; 
     background-position: center;
     background-repeat: no-repeat;
-    object-fit: cover;
+    object-fit: contain;
+    background-size: contain;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import Player from './Player';
 import Feedback from './Feedback';
+import img from '../images/main-title.svg' 
 import { 
         infoTitle1, 
         infoTitle2,
@@ -18,21 +19,8 @@ import {
 function Main() {
     return (
         <>
-            <div className='title'></div>
+            <img className='title'src={img} />
             <Player />
-
-            <div className='container'>
-                <p className='song__text'>123</p>
-                <p className='song__text'>123</p>
-                <p className='song__text'>123</p>
-                <p className='song__text'>34</p>
-                <p className='song__text'>45</p>
-                <p className='song__text'>67</p>
-                <p className='song__text'>78</p>
-                <p className='song__text'>89</p>
-                <p className='song__text'>90</p>
-                <p className='song__text'>et</p>
-            </div>
                 
             <section className='info'>
                 <h2 className='info__title'>{infoTitle1}</h2>

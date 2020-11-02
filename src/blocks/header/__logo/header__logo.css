@@ -7,3 +7,10 @@
 .header__logo:hover {
     opacity: .7;
 }
+
+@media screen and (max-width: 620px) {
+    .header__logo {
+        width: 32px;
+        height: 32px;
+    }
+}

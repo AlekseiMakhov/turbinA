@@ -6,3 +6,9 @@
     padding: 0;
     margin: 0;
 }
+
+@media screen and (max-width: 620px) {
+    .header__menu {
+        padding: 10px 10px 0;
+    }
+}

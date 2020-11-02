@@ -12,3 +12,12 @@
     cursor: pointer;
     outline: none;
 }
+
+@media screen and (max-width: 620px) {
+    
+    .song__ruler {
+        top: -10px;
+    }
+
+ 
+}

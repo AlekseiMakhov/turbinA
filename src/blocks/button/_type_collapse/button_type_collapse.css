@@ -1,7 +1,18 @@
 .button_type_collapse {
     width: 40px;
     height: 40px;
-    padding: 0;
-    border: 1px;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
     background-image: url('../../../images/player/collapse-button.svg');
+}
+
+@media screen and (max-width: 620px) {
+    .button_type_collapse {
+        width: 20px;
+        height: 20px;
+        margin-top: 3px;
+    }
 }
