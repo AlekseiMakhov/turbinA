@@ -1,37 +1,37 @@
 @keyframes move {
     0% {
-        transform: translate(0, calc(100vh - 350px));
+        transform: translate(0, calc(100vh - 80px));
     }
     100% {
-        transform: translate(0, calc(100vh - 505px))
+        transform: translate(0, calc(100vh - 230px))
     }
 }
 
 .player {
     width: calc(100% - 40px);
+    position: absolute;
     padding: 0 20px;
-    margin-top: calc(100vh - 350px);
+    top: calc(100vh - 80px);
     display: flex;
     justify-content: space-between;
-    margin-bottom: 24px;
-    transition: margin-top .3s ease-in-out;
+    transition: top .3s ease-in;
 }
 
 @media screen and (max-width: 620px) {
     
     @keyframes move {
         0% {
-            transform: translate(0, calc(100vh - 340px));
+            transform: translate(0, calc(100vh - 60px));
         }
         100% {
-            transform: translate(0, calc(100vh - 550px))
+            transform: translate(0, calc(100vh - 280px))
         }
     }
     
     .player {
-        margin-top: calc(100vh - 340px);
+        width: calc(100% - 24px);
+        top: calc(100vh - 60px);
         padding: 0 12px;
-        margin-bottom: 16px;
     }
 
  
