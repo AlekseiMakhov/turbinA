@@ -13,16 +13,18 @@ function Player(props) {
     }
 
     return (
-        <>
-            <section className={`player ${isExpanded ? 'player_expanded' : ''}`}>
-                <button type='button' className='button button_type_play'></button>
-                <Song isExpanded={isExpanded} text='Releases' />
-                
-                <button type='button' id='expand' className={`button ${isExpanded ? 'button_type_collapse' : 'button_type_expand'}`} onClick={handleExpandButtonClick}></button>
+        // <>
+            <section className='player-container'>
+                <div className={`player ${isExpanded ? 'player_expanded' : ''}`}>
+                    <button type='button' className='button button_type_play'></button>
+                    <Song isExpanded={isExpanded} text='Releases' />
+                    
+                    <button type='button' id='expand' className={`button ${isExpanded ? 'button_type_collapse' : 'button_type_expand'}`} onClick={handleExpandButtonClick}></button>
+            
+                </div>
+                <Container isExpanded={isExpanded}/>  
             </section>
-
-            {isExpanded && <Container />}
-        </>
+        // </>
     );
 }
 

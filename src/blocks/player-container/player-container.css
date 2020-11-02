@@ -1,0 +1,24 @@
+.player-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: calc(100vh - 525px) 0 0 0;
+    overflow: hidden;
+    height: 200px;
+}
+
+@media screen and (max-width: 620px) {
+    
+    @keyframes move {
+        0% {
+            transform: translate(0, 220px);
+        }
+        100% {
+            transform: translate(0, 0)
+        }
+    }
+    
+    .player-container {
+        margin-top: calc(100vh - 530px);
+    }
+}

@@ -18,8 +18,10 @@ function Menu(props) {
     }
 
     window.addEventListener('resize', defineMode);
-
+    console.log('isClosed', isClosed);
+    console.log('mobileMode', mobileMode);
     return (
+
         <nav className="header__menu">
             <div className={`button button_type_menu ${(!mobileMode || !isClosed) ? 'button_invisible' : ''}`} onClick={handleStreamShowClick}>Стриминги</div>
             <div className={`button button_type_menu ${(mobileMode && !isClosed) ? '' : 'button_invisible'}`} onClick={handleStreamShowClick}>
@@ -32,10 +34,6 @@ function Menu(props) {
                 <a className={`button button_type_menu`}>Apple Music ↗</a>
                 <a className={`button button_type_menu`}>VK Music ↗</a>
             </div>
-            {/* <a className={`button button_type_menu ${(mobileMode && isClosed) ? 'button_invisible' : ''}`}>Яндекс.Музыка ↗</a>
-            <a className={`button button_type_menu ${(mobileMode && isClosed) ? 'button_invisible' : ''}`}>Spotify ↗</a>
-            <a className={`button button_type_menu ${(mobileMode && isClosed) ? 'button_invisible' : ''}`}>Apple Music ↗</a>
-            <a className={`button button_type_menu ${(mobileMode && isClosed) ? 'button_invisible' : ''}`}>VK Music ↗</a> */}
         </nav>
     );
 }

@@ -1,0 +1,9 @@
+.header__links_hidden {
+    opacity: 0;
+}
+
+@media screen and (max-width: 620px) {
+    .header__links_hidden {
+        top: 220px;
+    }
+}

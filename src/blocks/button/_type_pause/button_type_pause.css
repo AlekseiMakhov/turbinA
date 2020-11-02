@@ -6,11 +6,12 @@
     background-position: center;
     background-repeat: no-repeat;
     border: none;
+    margin-top: 3px;
 }
+
 @media screen and (max-width: 620px) {
     .button_type_pause {
         width: 20px;
         height: 20px;
-        margin-top: 3px;
     }
 }

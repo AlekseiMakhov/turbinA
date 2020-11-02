@@ -1,11 +1,11 @@
 .player_expanded {
-    top: calc(100vh - 230px);
+    top: 0;
 }
 
 @media screen and (max-width: 620px) {
     
     .player_expanded {
-        top: calc(100vh - 280px);
+        top: 0;
     }
 
 }

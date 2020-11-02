@@ -20,6 +20,9 @@
 @import url('../src/blocks/player/player.css');
 @import url('../src/blocks/player/_expanded/player_expanded.css');
 @import url('../src/blocks/song/song.css');
+@import url('../src/blocks/song/_list-element/song_list-element.css');
 @import url('../src/blocks/song/_type_collapse/song_type_collapse.css');
 @import url('../src/blocks/container/container.css');
+@import url('../src/blocks/container/_expanded/container_expanded.css');
+@import url('../src/blocks/player-container/player-container.css');
 @import url('../src/blocks/container/_type_scrolled/container_type_scrolled.css');
