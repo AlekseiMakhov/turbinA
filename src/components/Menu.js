@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import closeIcon from '../images/close-icon.svg';
 
 function Menu(props) {
 
@@ -9,6 +10,7 @@ function Menu(props) {
 
     function defineMode() {
         (windowInnerWidth < 620) ? setMobileMode(true) : setMobileMode(false);
+        setIsClosed(true);
     }
 
     function handleStreamShowClick() {
@@ -18,14 +20,23 @@ function Menu(props) {
     window.addEventListener('resize', defineMode);
 
     return (
-        <ul className="header__menu">
-            <li className={`button button_type_menu ${(!mobileMode || !isClosed) ? 'button_invisible' : ''}`} onClick={handleStreamShowClick}>Стриминги</li>
-            <li className={`button button_type_menu ${(mobileMode && !isClosed) ? '' : 'button_invisible'}`} onClick={handleStreamShowClick}>Закрыть</li>
-            <li className={`button button_type_menu ${(mobileMode && isClosed) ? 'button_invisible' : ''}`}>Яндекс.Музыка ↗</li>
-            <li className={`button button_type_menu ${(mobileMode && isClosed) ? 'button_invisible' : ''}`}>Spotify ↗</li>
-            <li className={`button button_type_menu ${(mobileMode && isClosed) ? 'button_invisible' : ''}`}>Apple Music ↗</li>
-            <li className={`button button_type_menu ${(mobileMode && isClosed) ? 'button_invisible' : ''}`}>VK Music ↗</li>
-        </ul>
+        <nav className="header__menu">
+            <div className={`button button_type_menu ${(!mobileMode || !isClosed) ? 'button_invisible' : ''}`} onClick={handleStreamShowClick}>Стриминги</div>
+            <div className={`button button_type_menu ${(mobileMode && !isClosed) ? '' : 'button_invisible'}`} onClick={handleStreamShowClick}>
+                <img src={closeIcon} />
+            </div>
+
+            <div className={`header__links ${(mobileMode && isClosed) ? 'header__links_hidden' : ''}`}>
+                <a className={`button button_type_menu`}>Яндекс.Музыка ↗</a>
+                <a className={`button button_type_menu`}>Spotify ↗</a>
+                <a className={`button button_type_menu`}>Apple Music ↗</a>
+                <a className={`button button_type_menu`}>VK Music ↗</a>
+            </div>
+            {/* <a className={`button button_type_menu ${(mobileMode && isClosed) ? 'button_invisible' : ''}`}>Яндекс.Музыка ↗</a>
+            <a className={`button button_type_menu ${(mobileMode && isClosed) ? 'button_invisible' : ''}`}>Spotify ↗</a>
+            <a className={`button button_type_menu ${(mobileMode && isClosed) ? 'button_invisible' : ''}`}>Apple Music ↗</a>
+            <a className={`button button_type_menu ${(mobileMode && isClosed) ? 'button_invisible' : ''}`}>VK Music ↗</a> */}
+        </nav>
     );
 }
 

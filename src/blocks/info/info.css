@@ -3,7 +3,7 @@
 
 .info {
     margin: 0 5px;
-    margin-top: calc(100vh - 275px);
+    margin-top: calc(100vh - 325px);
     left: auto;
     padding-top: 20px;
     padding-left: 58px;
@@ -15,6 +15,6 @@
 @media screen and (max-width: 620px) {
     .info {
         padding: 10px 16px 0;
-        margin-top: calc(100vh - 280px);
+        margin-top: calc(100vh - 330px);
     }
 }

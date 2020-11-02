@@ -8,4 +8,6 @@
     background-repeat: no-repeat;
     object-fit: contain;
     background-size: contain;
+    left: 0;
+    top: calc(50vh - 100px);
 }
