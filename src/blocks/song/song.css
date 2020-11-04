@@ -1,23 +1,22 @@
 @import url('./__text/song__text.css');
 @import url('./__text/_scrolled/song__text_scrolled.css');
-@import url('./__ruler/song__ruler.css');
 @import url('./__playing-state/song__playing-state.css');
-@import url('./__ruler/_type_passed/ruler_type_passed.css');
 
 .song {
     width: 100%;
-    display: grid;
+    /* display: grid;
     grid-template-columns: auto max-content max-content;
-    grid-template-rows: 40px;
-    row-gap: 5px;
-    column-gap: 30px;
+    grid-template-rows: 35px;
+    row-gap: 5px; */
+    display: flex;
+    /* column-gap: 30px; */
     padding: 3px 0;
     margin: 0 20px;
     position: relative;
     overflow: hidden;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 768px) {
     .song {
         grid-template-columns: auto max-content;
         grid-template-rows: 30px 55px;

@@ -7,16 +7,7 @@
     height: 200px;
 }
 
-@media screen and (max-width: 620px) {
-    
-    @keyframes move {
-        0% {
-            transform: translate(0, 220px);
-        }
-        100% {
-            transform: translate(0, 0)
-        }
-    }
+@media screen and (max-width: 768px) {
     
     .player-container {
         margin-top: calc(100vh - 530px);

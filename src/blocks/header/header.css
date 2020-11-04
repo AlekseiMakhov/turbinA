@@ -6,14 +6,14 @@
 .header {
     width: calc(100%-45px);
     margin: 0;
-    padding: 15px 20px 0 25px;
+    padding: 15px 15px 0 20px;
     position: relative;
     display: flex;
     justify-content: space-between;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 768px) {
     .header {
-        padding: 10px 10px 0;
+        padding: 13px 13px 0 16px;
     }
 }

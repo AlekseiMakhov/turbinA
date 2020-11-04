@@ -1,10 +1,10 @@
 .song_type_collapse {
     grid-template-columns: auto max-content;
-    grid-template-rows: 40px min-content;
+    grid-template-rows: 35px min-content;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 768px) {
     .song_type_collapse {
-        grid-template-rows: 30px min-content;
+        grid-template-rows: 35px min-content;
     }
 } 

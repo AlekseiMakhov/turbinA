@@ -20,7 +20,7 @@ function SongContainer({ isExpanded }) {
         // <div className={`container ${isExpanded ? 'container_expanded' : ''}`}>
         <div className={className}>
             <div className='song song_list-element'>
-                <img className='song__playing-state' src={gif}/>
+                <img className='song__playing-state' src={gif} alt='icon' />
                 <h3 className='song__text'>Автор - наименование песни</h3>
             </div>    
         </div>

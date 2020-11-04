@@ -1,23 +1,32 @@
 .info__title {
-    margin: 44px 0;
+    margin: 76px 0 40px;
     color: black;
-    font-size: 30px;
+    font-size: 50px;
+    font-style: italic;
     font-weight: normal;
     line-height: 1.2;
 }
-
+/* 
 .info__title:last-of-type {
     margin: 86px 0 80px;
+} */
+
+@media screen and (max-width: 1280px) {
+    .info__title {
+        margin-top: 66px;
+        font-size: 46px;
+    }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 1024px) {
     .info__title {
-        margin: 26px 0 15px;
-        font-size: 20px;
-        font-weight: normal;
+        font-size: 42px;
     }
+}
 
-    .info__title:last-of-type {
-        margin: 60px 0 30px;
+@media screen and (max-width: 768px) {
+    .info__title {
+        font-size: 32px;
+        margin: 46px 0 30px;
     }
 }

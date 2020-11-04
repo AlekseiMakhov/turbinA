@@ -1,4 +1,5 @@
 .header__logo {
+    margin-top: 5px;
     width: 50px;
     height: 50px;
     cursor: pointer;
@@ -8,8 +9,9 @@
     opacity: .7;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 768px) {
     .header__logo {
+        margin-top: 3px;
         width: 32px;
         height: 32px;
     }

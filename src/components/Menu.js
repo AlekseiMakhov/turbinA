@@ -1,40 +1,29 @@
 import React, { useState } from 'react';
 import closeIcon from '../images/close-icon.svg';
 
-function Menu(props) {
+function Menu({ isMobileMode }) {
 
-    const windowInnerWidth = window.innerWidth;
-
-    const [mobileMode, setMobileMode] = useState(false);
     const [isClosed, setIsClosed] = useState(true);
 
-    function defineMode() {
-        (windowInnerWidth < 620) ? setMobileMode(true) : setMobileMode(false);
-        setIsClosed(true);
-    }
-
-    function handleStreamShowClick() {
+    function handleLinksShowClick() {
         setIsClosed(!isClosed);
     }
 
-    window.addEventListener('resize', defineMode);
-    console.log('isClosed', isClosed);
-    console.log('mobileMode', mobileMode);
     return (
 
-        <nav className="header__menu">
-            <div className={`button button_type_menu ${(!mobileMode || !isClosed) ? 'button_invisible' : ''}`} onClick={handleStreamShowClick}>Стриминги</div>
-            <div className={`button button_type_menu ${(mobileMode && !isClosed) ? '' : 'button_invisible'}`} onClick={handleStreamShowClick}>
-                <img src={closeIcon} />
+        <div className="header__menu">
+            <div className={`button button_type_menu ${(!isMobileMode || !isClosed) ? 'button_invisible' : ''}`} onClick={handleLinksShowClick}>Стриминги</div>
+            <div className={`button button_type_menu ${(isMobileMode && !isClosed) ? '' : 'button_invisible'}`} onClick={handleLinksShowClick}>
+                <img src={closeIcon} alt='#'/>
             </div>
 
-            <div className={`header__links ${(mobileMode && isClosed) ? 'header__links_hidden' : ''}`}>
-                <a className={`button button_type_menu`}>Яндекс.Музыка ↗</a>
-                <a className={`button button_type_menu`}>Spotify ↗</a>
-                <a className={`button button_type_menu`}>Apple Music ↗</a>
-                <a className={`button button_type_menu`}>VK Music ↗</a>
+            <div className={`header__links ${(isMobileMode && isClosed) ? 'header__links_hidden' : ''}`}>
+                <a href='https://praktikum.yandex.ru/profile/web/' className={`button button_type_menu`}>Яндекс.Музыка ↗</a>
+                <a href='https://praktikum.yandex.ru/profile/web/' className={`button button_type_menu`}>Spotify ↗</a>
+                <a href='https://praktikum.yandex.ru/profile/web/' className={`button button_type_menu`}>Apple Music ↗</a>
+                <a href='https://praktikum.yandex.ru/profile/web/' className={`button button_type_menu`}>VK Music ↗</a>
             </div>
-        </nav>
+        </div>
     );
 }
 

@@ -22,6 +22,7 @@ function Player(props) {
                     <button type='button' id='expand' className={`button ${isExpanded ? 'button_type_collapse' : 'button_type_expand'}`} onClick={handleExpandButtonClick}></button>
             
                 </div>
+                {isExpanded && <button id='switch' type='button' className='button button_type_switch'>Релизы</button>}
                 <Container isExpanded={isExpanded}/>  
             </section>
         // </>

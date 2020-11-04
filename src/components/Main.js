@@ -19,7 +19,7 @@ import {
 function Main() {
     return (
         <>
-            <img className='title'src={img} />
+            <img className='title'src={img} alt='icon'/>
             <Player />
                 
             <section className='info'>

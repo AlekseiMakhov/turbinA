@@ -1,12 +1,11 @@
 @import url('./__input/feedback__input.css');
-@import url('./__input/_type_check/feedback__input_type_check.css');
 @import url('./__input/_type_text-area/feedback__input_type_text-area.css');
 @import url('./__button-container/feedback__button-container.css');
 @import url('./__text/feedback__text.css');
 @import url('./__link/feedback__link.css');
 
 .feedback {
-    max-width: 600px;
+    /* max-width: 600px; */
     display: flex;
     flex-direction: column;
     position: relative;
