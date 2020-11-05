@@ -7,8 +7,8 @@
     background-repeat: no-repeat;
     border: none;
     background-size: contain;
-    margin-top: 3px;
     border-radius: 0;
+    align-self: center;
 }
 
 @media screen and (max-width: 768px) {

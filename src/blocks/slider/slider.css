@@ -1,8 +1,19 @@
+@import url('./__thumb/slider__thumb.css');
+
 .slider {
     width: 100%;
     position: relative;
-    height: 15px;
+    height: 10px;
     cursor: pointer;
-    align-items: center;
-    display: flex;
+    margin-top: 5px;
+    grid-row: 2;
+    grid-column: 2/4;
+    margin-bottom: 13px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .slider {
+        margin-top: 10px;
+    }
 }

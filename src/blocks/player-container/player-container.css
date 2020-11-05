@@ -1,15 +1,14 @@
 .player-container {
-    display: flex;
-    flex-direction: column;
     position: relative;
-    margin: calc(100vh - 525px) 0 0 0;
+    margin: calc(100vh - 520px) 0 0 0;
     overflow: hidden;
-    height: 200px;
+    height: 194px;
 }
 
 @media screen and (max-width: 768px) {
     
     .player-container {
-        margin-top: calc(100vh - 530px);
+        margin-top: calc(100vh - 555px);
+        height: 224px;
     }
 }

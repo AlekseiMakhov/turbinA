@@ -1,0 +1,10 @@
+.container_type_expanded {
+    grid-column: 2/5;
+}
+
+@media screen and (max-width: 768px) {
+
+    .container_type_expanded {
+        grid-column: 2/4;
+    }
+}

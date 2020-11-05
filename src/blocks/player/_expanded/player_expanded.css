@@ -1,11 +1,13 @@
 .player_expanded {
     top: 0;
+    grid-template-columns: 20px auto min-content 147px 24px;                             
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 768px) {
     
     .player_expanded {
         top: 0;
+        grid-template-columns: 16px auto min-content 16px;
+        grid-template-rows: repeat(4, max-content);
     }
-
 }
