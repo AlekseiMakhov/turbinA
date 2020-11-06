@@ -1,5 +1,6 @@
 @import url('./__text/player__text.css');
 @import url('./__text/_type_time/player__text_type_time.css');
+@import url('./__text/_type_song/player__text_type_song.css');
 
 .player {
     width: calc(100% - 40px);

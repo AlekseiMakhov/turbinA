@@ -1,5 +1,5 @@
 import React from 'react';
-const plaktikumUrl = 'https://praktikum.yandex.ru/';
+const plaktikumUrl = 'https://www.notion.so/de0ecc64f8134e178448dcbc6382046e';
 
 function Footer() {
     return (

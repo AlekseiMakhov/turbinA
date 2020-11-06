@@ -24,9 +24,3 @@
         line-height: 19px;
     }
 }
-
-.player__text_type_song {
-    overflow-wrap: normal;
-    text-overflow: initial;
-    white-space: normal;
-}
