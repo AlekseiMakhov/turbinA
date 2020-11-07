@@ -1,19 +1,12 @@
 .button_type_pause {
-    width: 16px;
     height: 16px;
-    padding: 0;
-    background-image: url('../../../images/player/pause-button.svg');
-    background-position: center;
-    background-repeat: no-repeat;
     border: none;
-    background-size: contain;
     border-radius: 0;
     align-self: center;
 }
 
 @media screen and (max-width: 768px) {
     .button_type_pause {
-        width: 14px;
         height: 14px;
     }
 }

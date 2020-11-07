@@ -3,7 +3,8 @@
 @import url('./__text/_type_song/player__text_type_song.css');
 
 .player {
-    width: calc(100% - 40px);
+    width: 100%;
+    box-sizing: border-box;
     display: grid;
     position: absolute;
     grid-template-columns: 20px auto 60px 24px;     
@@ -22,7 +23,6 @@
     
     .player {
         padding: 0 12px;
-        width: calc(100% - 24px);
         top: 174px;
         column-gap: 12px;
         grid-template-columns: 16px auto 55px 16px;

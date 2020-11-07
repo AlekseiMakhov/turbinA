@@ -6,30 +6,25 @@
     background-repeat: no-repeat;
     object-fit: contain;
     background-size: contain;
-    left: calc(50% - 360px);
-    top: calc(50vh - 113px);
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 1280px) {
     .title {
         width: 600px;
-        left: calc(50% - 300px);
-        top: calc(50vh - 93px);
     }
 }
 
 @media screen and (max-width: 1024px) {
     .title {
         width: 620px;
-        left: calc(50% - 310px);
-        top: calc(50vh - 96px);
     }
 }
 
 @media screen and (max-width: 768px) {
     .title {
         width: 270px;
-        left: calc(50% - 135px);
-        top: calc(50vh - 41px);
     }
 }

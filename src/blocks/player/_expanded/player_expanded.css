@@ -6,7 +6,6 @@
 @media screen and (max-width: 768px) {
     
     .player_expanded {
-        top: 0;
         grid-template-columns: 16px auto 55px 16px;
         grid-template-rows: repeat(4, max-content);
     }

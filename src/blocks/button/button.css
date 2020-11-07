@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     height: 35px;
-    color: white;
+    color: #fff;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 30px;
     font-size: 16px;
@@ -10,9 +10,8 @@
     line-height: 19px;
     text-align: center;
     cursor: pointer;
-    opacity: 1;
     outline: none;
-    border: 2px solid white;
+    border: 2px solid #fff;
     visibility: visible;
     opacity: 1;
     transition: visibility .3s, opacity .3s linear;

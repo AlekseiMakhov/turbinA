@@ -3,7 +3,6 @@
 @import url('../src/blocks/page/page.css');
 @import url('../src/blocks/header/header.css');
 @import url('../src/blocks/button/button.css');
-@import url('../src/blocks/button/_type_collapse/button_type_collapse.css');
 @import url('../src/blocks/button/_type_dark/button_type_dark.css');
 @import url('../src/blocks/button/_type_expand/button_type_expand.css');
 @import url('../src/blocks/button/_type_switch/button_type_switch.css');
@@ -13,6 +12,7 @@
 @import url('../src/blocks/button/_type_menu/button_type_menu.css');
 @import url('../src/blocks/button/_type_check/button_type_check.css');
 @import url('../src/blocks/button/_type_submit/button_type_submit.css');
+@import url('../src/blocks/button/_type_close/button_type_close.css');
 @import url('../src/blocks/feedback/feedback.css');
 @import url('../src/blocks/footer/footer.css');
 @import url('../src/blocks/info/info.css');

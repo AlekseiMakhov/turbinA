@@ -1,15 +1,14 @@
-import { useState } from 'react';
-import logo from '../images/logo.svg';
 import Menu from './Menu';
+import Logo from './icons/Logo';
 
-function Header(props) {
+function Header({ isMobileMode }) {
 
     return (
         <header className='header'>
             <h1>
-                <img className='header__logo' src={logo} alt='турбина' />
+                <Logo isMobileMode={isMobileMode}/>
             </h1>
-            <Menu isMobileMode={props.isMobileMode} />
+            <Menu isMobileMode={isMobileMode} />
         </header>
     );
 }

@@ -1,5 +1,19 @@
 .feedback__input_type_text-area {
-    min-height: 60px;
+    height: 60px;
     padding-top: 19px;
     resize: none;
+}
+
+.feedback__input_type_text-area:focus {
+    height: 160px;
+}
+
+.feedback__input_type_text-area:focus::-webkit-scrollbar {
+    width: 3px;
+  }
+.feedback__input_type_text-area:focus::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, .1);
+}
+.feedback__input_type_text-area:focus::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .3);
 }

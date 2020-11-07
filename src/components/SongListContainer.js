@@ -1,7 +1,5 @@
 import React from 'react';
 
-import gif from '../images/player/playing-gif.gif';
-
 function SongListContainer() {
 
     return (

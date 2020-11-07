@@ -2,8 +2,8 @@
     opacity: 0;
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 768px) {
     .header__links_hidden {
-        top: 220px;
+        right: -150px;
     }
 }

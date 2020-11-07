@@ -10,11 +10,8 @@ function Feedback() {
             <textarea className='feedback__input feedback__input_type_text-area' required placeholder='Стихи'></textarea>
             <div className='feedback__button-container'>
                 <button className='button button_type_check button_type_dark' type='checkbutton' required></button>
-                <p className='feedback__text'>Согласен с &nbsp;
-                    <span>
-                        <a className='feedback__link' href={oferta}>офертой</a>
-                    </span>
-                </p>
+                <p className='feedback__text'>Согласен с &nbsp;</p>
+                <a className='feedback__link' href={oferta}>офертой</a>
             </div>    
             <button className='button button_type_dark button_type_submit' type='submit' required>Отправить</button>
         </form>

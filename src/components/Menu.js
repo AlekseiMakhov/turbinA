@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import closeIcon from '../images/close-icon.svg';
+import { menuLinks } from '../config/config';
+import cn from 'classnames';
+import CloseButton from './buttons/CloseButton';
 
 function Menu({ isMobileMode }) {
 
@@ -12,16 +14,17 @@ function Menu({ isMobileMode }) {
     return (
 
         <div className="header__menu">
-            <div className={`button button_type_menu ${(!isMobileMode || !isClosed) ? 'button_invisible' : ''}`} onClick={handleLinksShowClick}>Стриминги</div>
-            <div className={`button button_type_menu ${(isMobileMode && !isClosed) ? '' : 'button_invisible'}`} onClick={handleLinksShowClick}>
-                <img src={closeIcon} alt='#'/>
-            </div>
+            <button className={cn('button button_type_menu', {'button_invisible' : (!isMobileMode || !isClosed)})} onClick={handleLinksShowClick}>Стриминги</button>
+            <CloseButton isClosed={isClosed} isMobileMode={isMobileMode} onClick={handleLinksShowClick}/>
 
-            <div className={`header__links ${(isMobileMode && isClosed) ? 'header__links_hidden' : ''}`}>
-                <a href='https://praktikum.yandex.ru/profile/web/' className={`button button_type_menu`}>Яндекс.Музыка ↗</a>
-                <a href='https://praktikum.yandex.ru/profile/web/' className={`button button_type_menu`}>Spotify ↗</a>
-                <a href='https://praktikum.yandex.ru/profile/web/' className={`button button_type_menu`}>Apple Music ↗</a>
-                <a href='https://praktikum.yandex.ru/profile/web/' className={`button button_type_menu`}>VK Music ↗</a>
+            <div className={cn('header__links', { 'header__links_hidden': isMobileMode && isClosed })}>
+                {menuLinks.map((item) => {
+                    return (
+                        <a key={item.name} href={item.link} target='blank'>
+                            <button className='button button_type_menu'>{item.name}</button>
+                        </a>
+                    )
+                })}
             </div>
         </div>
     );

@@ -1,16 +1,13 @@
 .button_type_menu {
     margin-bottom: 8px;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 20px;
-    list-style: none; 
+    padding: 0 20px;
+    height: 40px;
 }
 
 @media screen and (max-width: 768px) {
     .button_type_menu {
-        height: 12px;
+        height: 29px;
         margin-bottom: 6px;
-        padding: 10px 16px;
+        padding: 0 16px;
     }
 }
-

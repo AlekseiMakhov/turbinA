@@ -1,19 +1,11 @@
 .button_type_expand {
-    width: 24px;
-    height: 24px;
-    background-image: url('../../../images/player/expand-button.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 0;
-    background-size: contain;
-    background-color: rgba(0, 0, 0, 0);
     border: none;
     align-self: center;
+    height: 24px;
 }
 
 @media screen and (max-width: 768px) {
     .button_type_expand {
-        width: 16px;
         height: 16px;
     }
 }

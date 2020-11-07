@@ -5,7 +5,7 @@
 @import url('./__link/feedback__link.css');
 
 .feedback {
-    /* max-width: 600px; */
+
     display: flex;
     flex-direction: column;
     position: relative;

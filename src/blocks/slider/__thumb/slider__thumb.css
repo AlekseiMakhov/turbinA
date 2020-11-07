@@ -1,10 +1,10 @@
 .slider__thumb {
     border: none;
-    background-color: white;
+    background-color: #fff;
     width: 50%;
     height: 3px;
     outline: none;
-    color: white;
+    color: #fff;
 }
 
 .slider__thumb::before {

@@ -14,7 +14,7 @@ import {
         INFO_PARAGRAPH_5,
         INFO_PARAGRAPH_6,
         INFO_PARAGRAPH_7
-    } from '../config/config';
+    } from '../texts/infoTexts';
 
 function Main({ isMobileMode }) {
     return (

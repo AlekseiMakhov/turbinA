@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
@@ -10,8 +10,16 @@ function App() {
   function setViewPortMode() {
       (window.innerWidth <= 768) ? setMobileMode(true) : setMobileMode(false);
   }
-  document.addEventListener('DOMContentLoaded', setViewPortMode);
-  window.addEventListener('resize', setViewPortMode);
+
+  useEffect(_ => {
+    document.addEventListener('DOMContentLoaded', setViewPortMode);
+    window.addEventListener('resize', setViewPortMode);
+    return _ => {
+      document.removeEventListener('DOMContentLoaded', setViewPortMode);
+      window.removeEventListener('resize', setViewPortMode);
+    }
+  }, []);
+  
   return (
 
       <>
