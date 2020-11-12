@@ -18,13 +18,11 @@ function Menu({ isMobileMode }) {
             <CloseButton isClosed={isClosed} isMobileMode={isMobileMode} onClick={handleLinksShowClick}/>
 
             <div className={cn('header__links', { 'header__links_hidden': isMobileMode && isClosed })}>
-                {menuLinks.map((item) => {
-                    return (
-                        <a key={item.name} href={item.link} target='blank'>
-                            <button className='button button_type_menu'>{item.name}</button>
-                        </a>
-                    )
-                })}
+                {menuLinks.map((item) => (
+                    <a key={item.name} href={item.link} target='blank'>
+                        <button className='button button_type_menu'>{item.name}</button>
+                    </a>
+                ))}
             </div>
         </div>
     );

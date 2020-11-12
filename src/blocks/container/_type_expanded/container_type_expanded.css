@@ -1,5 +1,12 @@
 .container_type_expanded {
-    grid-column: 2/5;
+    grid-column: 2/6;
+}
+
+@media screen and (max-width: 1024px) {
+
+    .container_type_expanded {
+        grid-column: 3/6;
+    }
 }
 
 @media screen and (max-width: 768px) {

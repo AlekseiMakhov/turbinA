@@ -1,0 +1,17 @@
+.player__button-container {
+    display: none;
+    grid-row: 1;
+    grid-column: 5;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .player__button-container  {
+        grid-row: 4;
+        grid-column: 2/4;
+        justify-content: space-between;
+        height: 31px;
+        padding: 20px 0;
+    }
+}

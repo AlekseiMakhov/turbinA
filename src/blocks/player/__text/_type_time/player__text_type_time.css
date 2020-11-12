@@ -1,3 +1,16 @@
 .player__text_type_time {
     justify-self: right;
+    grid-column: 3;
 }
+
+/* @media screen and (max-width: 1024px) {
+    .player__text_type_time {
+        grid-column: 3;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .player__text_type_time {
+        grid-column: 3;
+    }
+} */

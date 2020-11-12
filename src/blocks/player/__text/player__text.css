@@ -9,6 +9,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    grid-column: 2;
 }
 
 @media screen and (max-width: 1280px) {
@@ -18,9 +19,16 @@
     }
 }
 
+/* @media screen and (max-width: 1024px) {
+    .player__text {
+        grid-column: 2;
+    }
+} */
+
 @media screen and (max-width: 768px) {
     .player__text {
         font-size: 14px;
         line-height: 19px;
+        /* grid-column: 2; */
     }
 }

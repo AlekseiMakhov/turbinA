@@ -1,16 +1,18 @@
 .button_type_switch {
-    width: 147px;
-    grid-row: 1;
-    grid-column: 4;
+    width: 135px;
+    height: 100%;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .button_type_switch {
+        width: 125px;
+    }
 }
 
 @media screen and (max-width: 768px) {
 
     .button_type_switch {
-        height: 32px;
         width: 100%;
-        grid-row: 3;
-        grid-column: 2/4;
-        margin-bottom: 30px;
     }
 }

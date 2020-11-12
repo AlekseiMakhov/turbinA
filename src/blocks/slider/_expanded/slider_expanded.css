@@ -1,0 +1,17 @@
+.slider_expanded {
+    grid-column: 3/5;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .slider_expanded {
+        grid-column: 2/5;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .slider_expanded {
+        grid-column: 2/4;
+    }
+}

@@ -24,3 +24,8 @@
 @import url('../src/blocks/container/_type_scrolled/container_type_scrolled.css');
 @import url('../src/blocks/player-container/player-container.css');
 @import url('../src/blocks/slider/slider.css');
+@import url('../src/blocks/slider/_expanded/slider_expanded.css');
+@import url('../src/blocks/button-with-icon/button-with-icon.css');
+@import url('../src/blocks/button-with-icon/_hidden/button-with-icon_hidden.css');
+@import url('../src/blocks/overlay/overlay.css');
+@import url('../src/blocks/overlay/_visible/overlay_visible.css');
