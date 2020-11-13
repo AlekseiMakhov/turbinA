@@ -1,14 +1,14 @@
 import Menu from './Menu';
 import Logo from './icons/Logo';
 
-function Header({ isMobileMode }) {
+function Header() {
 
     return (
         <header className='header'>
             <h1>
-                <Logo isMobileMode={isMobileMode}/>
+                <Logo />
             </h1>
-            <Menu isMobileMode={isMobileMode} />
+            <Menu />
         </header>
     );
 }

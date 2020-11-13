@@ -3,7 +3,7 @@
     margin: calc(100vh - 520px) 0 0 0;
     overflow: hidden;
     height: 194px;
-    transition: height .4s, margin .4s linear;
+    transition: height .4s, margin .4s ease-out;
 }
 
 @media screen and (max-width: 768px) {

@@ -2,74 +2,50 @@ import { useState, useEffect, useLayoutEffect } from 'react';
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
-// import Lottie from 'lottie-web';
-// import '@lottiefiles/lottie-player';
-// import test from '../animations/data.json'
-// import test2 from 'https://assets1.lottiefiles.com/datafiles/HN7OcWNnoqje6iXIiZdWzKxvLIbfeCGTmvXmEm1h/data.json'
-// import json from '../animations/gradient.json';
-// const bg = JSON.parse(json);
-
-// const test = 
-
-
-const debounce = require('lodash/debounce');
+import ViewPortMode from './contexts/ViewPortMode';
+import debounce from 'lodash/debounce';
 
 function App() {
 
-  const [isMobileMode, setIsMobileMode] = useState(false);
+  const [viewPortMode, setViewPortMode] = useState({  mode: 'D', 
+                                                      windowWidth: 0
+                                                    });                                                 
 
-  function setViewPortMode() {
-      (window.innerWidth <= 768) ? setIsMobileMode(true) : setIsMobileMode(false);
-
+  function setViewPort() {
+      let tmpMode = viewPortMode.mode
+      if (window.innerWidth <= 768) {
+        tmpMode = 'S';
+      } else if (window.innerWidth <= 1024) {
+        tmpMode = 'M';
+      } else if (window.innerWidth <= 1280) {
+        tmpMode = 'L';
+      } else {
+        tmpMode = 'D';
+      }
+      setViewPortMode({ mode: tmpMode, windowWidth: window.innerWidth});
   }
 
-  // document.querySelector('.page').style.backgroundImage = {bg};
-
   useEffect( _ => {
-    window.addEventListener('resize', debounce(setViewPortMode, 100));
-    // document.addEventListener('DOMContentLoaded', setBackground);
+    window.addEventListener('resize', debounce(setViewPort, 100));
     return _ => {
-      window.removeEventListener('resize', debounce(setViewPortMode, 100));
-      // document.addEventListener('DOMContentLoaded', setBackground);
+      window.removeEventListener('resize', debounce(setViewPort, 100));
     }
   }, []);
-
-  // function setBackground() {
-  //   Lottie.loadAnimation({
-  //     container:  document.querySelector('.animation'), // the dom element that will contain the animation
-  //     renderer: 'svg',
-  //     loop: true,
-  //     autoplay: true,
-  //     path: 'https://assets9.lottiefiles.com/datafiles/MUp3wlMDGtoK5FK/data.json' // the path to the animation json
-  //   });
-  // }
 
   useLayoutEffect( _ => {
     document.addEventListener('DOMContentLoaded', setViewPortMode);
-    // document.addEventListener('DOMContentLoaded', setBackground);
     return _ => {
       document.addEventListener('DOMContentLoaded', setViewPortMode);
-      // document.addEventListener('DOMContentLoaded', setBackground);
     }
   }, []);
-  // console.log(test)
-  // console.log(test2)
   
   return (
       <>        
-      {/* <lottie-player
-              autoplay
-              loop
-              mode="normal"
-              src={test}
-              style={{width: '320px', height: '600px'}}
-            >
-            </lottie-player>
-        <div className='animation'>
-          
-         </div> */}
-        <Header isMobileMode={isMobileMode} />
-        <Main isMobileMode={isMobileMode}/>
+        <ViewPortMode.Provider value={viewPortMode}>
+            <Header />
+            <Main />
+        </ViewPortMode.Provider>
+
         <Footer />    
       </>
   );

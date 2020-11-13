@@ -1,18 +1,22 @@
 .button_type_play {
-    height: 16px;
+    width: 18px;
+    height: 20px;
     border: none;
     border-radius: 0;
     align-self: center;
+    background-position: center;
 }
 
 @media screen and (max-width: 1280px) {
     .button_type_play {
-        height: 15px;
+        width: 15px;
+        height: 18px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .button_type_play {
         height: 13px;
+        width: 11px;
     }
 }

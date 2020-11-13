@@ -1,5 +1,53 @@
-function PlayButton({ onClick, width, height, color }) {
-    // const size = (isMobileMode ? "14" : "18");
+import { useContext } from "react";
+import ViewPortMode from "../contexts/ViewPortMode";
+
+function PlayButton({ onClick, color, small }) {
+
+    const viewPortMode = useContext(ViewPortMode);
+
+    let width = 20;
+    let height = 16;
+
+    if (small) { 
+        switch (viewPortMode.mode) {
+            case 'S':
+                width = 7; 
+                height = 9;
+                break;    
+            case 'M':
+                width = 8; 
+                height = 10;
+                break; 
+            case 'L':
+                width = 9; 
+                height = 11;
+                break;    
+            default:
+                width = 9; 
+                height = 11;
+                break; 
+        }
+    } else {
+        switch (viewPortMode.mode) {
+            case 'S':
+                width = 16; 
+                height = 13;
+                break;    
+            case 'M':
+                width = 18; 
+                height = 15;
+                break; 
+            case 'L':
+                width = 18; 
+                height = 15;
+                break;    
+            default:
+                width = 20; 
+                height = 16;
+                break; 
+        }
+    }    
+
     return(
         <button className='button button_type_play' onClick={onClick}>
             <svg width={width} height={height} viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">

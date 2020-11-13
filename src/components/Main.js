@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
 import Player from './Player';
 import Feedback from './Feedback';
 import img from '../images/main-title.svg' 
@@ -16,11 +17,13 @@ import {
         INFO_PARAGRAPH_7
     } from '../texts/infoTexts';
 
-function Main({ isMobileMode }) {
+function Main() {
+
     return (
         <>
             <img className='title'src={img} alt='icon'/>
-            <Player isMobileMode={isMobileMode}/>
+            
+            <Player />
                 
             <section className='info'>
                 <h2 className='info__title'>{INFO_TITLE_1}</h2>

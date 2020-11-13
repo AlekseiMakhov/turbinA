@@ -2,7 +2,7 @@
 
 .button-with-icon {
     width: 95px;
-    height: 100%;
+    height: 35px;
     display: flex;
     align-items: center;
     background-color: #fff;
@@ -14,6 +14,7 @@
     outline: none;
     transition: opacity .3s linear;
     border: none;
+    padding: 0;
 }
 
 .button-with-icon:hover {
@@ -24,6 +25,7 @@
 
     .button-with-icon {
         width: 85px;
+        height: 34px;
     }
 }
 
@@ -31,5 +33,8 @@
 
     .button-with-icon {
         width: 75px;
+        margin-right: 5px;
+        height: 31px;
+        padding: 0 20px;
     }
 }

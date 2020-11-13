@@ -1,12 +1,13 @@
 .button_type_switch {
     width: 135px;
-    height: 100%;
+    height: 35px;
 }
 
 @media screen and (max-width: 1280px) {
 
     .button_type_switch {
         width: 125px;
+        height: 34px;
     }
 }
 
@@ -14,5 +15,6 @@
 
     .button_type_switch {
         width: 100%;
+        height: 31px;
     }
 }
