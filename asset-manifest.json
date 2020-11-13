@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/AlekseiMakhov/turbinA/static/css/main.da59a97c.chunk.css",
+    "main.js": "/AlekseiMakhov/turbinA/static/js/main.d1149ae1.chunk.js",
+    "main.js.map": "/AlekseiMakhov/turbinA/static/js/main.d1149ae1.chunk.js.map",
+    "runtime-main.js": "/AlekseiMakhov/turbinA/static/js/runtime-main.03007b9d.js",
+    "runtime-main.js.map": "/AlekseiMakhov/turbinA/static/js/runtime-main.03007b9d.js.map",
+    "static/js/2.2d234540.chunk.js": "/AlekseiMakhov/turbinA/static/js/2.2d234540.chunk.js",
+    "static/js/2.2d234540.chunk.js.map": "/AlekseiMakhov/turbinA/static/js/2.2d234540.chunk.js.map",
+    "index.html": "/AlekseiMakhov/turbinA/index.html",
+    "static/css/main.da59a97c.chunk.css.map": "/AlekseiMakhov/turbinA/static/css/main.da59a97c.chunk.css.map",
+    "static/js/2.2d234540.chunk.js.LICENSE.txt": "/AlekseiMakhov/turbinA/static/js/2.2d234540.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/AlekseiMakhov/turbinA/static/media/bg.a0d0e20b.jpg",
+    "static/media/legal-entity-agreement-ru-ru.19579582.pdf": "/AlekseiMakhov/turbinA/static/media/legal-entity-agreement-ru-ru.19579582.pdf",
+    "static/media/main-title.a85996c3.svg": "/AlekseiMakhov/turbinA/static/media/main-title.a85996c3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.03007b9d.js",
+    "static/js/2.2d234540.chunk.js",
+    "static/css/main.da59a97c.chunk.css",
+    "static/js/main.d1149ae1.chunk.js"
+  ]
+}
