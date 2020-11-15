@@ -1,0 +1,19 @@
+{
+    "track": {
+        "id": "",
+        "author": "",
+        "title": "",
+        "text": "",
+        "duration": 0,
+        "album": "",
+        "releaseYear": 0,
+        "links": [],
+        "trackSource": ""
+    },
+    "request": {
+        "name": "",
+        "email": "",
+        "phone": "",
+        "poemText": ""
+    }
+}

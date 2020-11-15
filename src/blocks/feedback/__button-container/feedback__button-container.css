@@ -1,0 +1,7 @@
+.feedback__button-container {
+    position: relative;
+    display: flex;
+    margin: 40px 0;
+    align-content: flex-start;
+    align-items: center;
+}

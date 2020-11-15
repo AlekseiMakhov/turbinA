@@ -1,0 +1,16 @@
+.player__text_type_expanded-time {
+    justify-self: right;
+    grid-column: 4;
+}
+
+/* @media screen and (max-width: 1024px) {
+    .player__text_type_expanded-time {
+        grid-column: 4;
+    }
+} */
+
+@media screen and (max-width: 768px) {
+    .player__text_type_expanded-time {
+        grid-column: 3;
+    }
+}

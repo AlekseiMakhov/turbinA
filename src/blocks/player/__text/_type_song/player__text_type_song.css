@@ -1,0 +1,6 @@
+.player__text_type_song {
+    overflow-wrap: normal;
+    text-overflow: initial;
+    white-space: normal;
+    text-overflow: unset;
+}

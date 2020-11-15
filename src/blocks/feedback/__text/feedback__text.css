@@ -1,0 +1,12 @@
+.feedback__text {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 121%;
+}
+
+@media screen and (max-width: 620px) {
+    .feedback__text {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,15 @@
+.player-container {
+    position: relative;
+    margin: calc(100vh - 520px) 0 0 0;
+    overflow: hidden;
+    height: 194px;
+    transition: height .4s, margin .4s ease-out;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .player-container {
+        margin-top: calc(100vh - 805px);
+        height: 474px;
+    }
+}

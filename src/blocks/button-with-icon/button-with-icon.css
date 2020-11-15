@@ -1,0 +1,40 @@
+@import url('./__text/button-with-icon__text.css');
+
+.button-with-icon {
+    width: 95px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-right: 10px;
+    justify-content: center;
+    opacity: 1;
+    cursor: pointer;
+    outline: none;
+    transition: opacity .3s linear;
+    border: none;
+    padding: 0;
+}
+
+.button-with-icon:hover {
+    opacity: .7;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .button-with-icon {
+        width: 85px;
+        height: 34px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .button-with-icon {
+        width: 75px;
+        margin-right: 5px;
+        height: 31px;
+        padding: 0 20px;
+    }
+}

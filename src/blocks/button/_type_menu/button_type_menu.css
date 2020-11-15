@@ -1,0 +1,13 @@
+.button_type_menu {
+    margin-bottom: 8px;
+    padding: 0 20px;
+    height: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .button_type_menu {
+        height: 29px;
+        margin-bottom: 6px;
+        padding: 0 16px;
+    }
+}

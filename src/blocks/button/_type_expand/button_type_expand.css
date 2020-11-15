@@ -1,0 +1,11 @@
+.button_type_expand {
+    border: none;
+    align-self: center;
+    height: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .button_type_expand {
+        height: 16px;
+    }
+}

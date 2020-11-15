@@ -1,0 +1,38 @@
+@import url('./__text/player__text.css');
+@import url('./__text/_expanded/player__text_expanded.css');
+@import url('./__text/_type_time/player__text_type_time.css');
+@import url('./__text/_type_expanded-time/player__text_type_expanded-time.css');
+@import url('./__text/_type_song/player__text_type_song.css');
+@import url('./__button-container/player__button-container.css');
+@import url('./__button-container/_visible/player__button-container_visible.css');
+@import url('./__cover/player__cover.css');
+@import url('./__cover/_visible/player__cover_visible.css');
+
+
+.player {
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    position: absolute;
+    grid-template-columns: 20px auto 60px 24px;     
+    grid-template-rows: repeat(3, max-content);      
+    column-gap: 20px;                  
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    padding: 0 25px;
+    transition: top .4s ease-out;
+    top: 144px;
+    left: 0;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .player {
+        padding: 0 12px;
+        top: 424px;
+        column-gap: 12px;
+        grid-template-columns: 16px auto 55px 16px;
+        grid-template-rows: repeat(5, max-content);
+    }
+}

@@ -1,0 +1,17 @@
+.header__links {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transition: opacity .7s, right .23s ease-out;
+
+}
+
+@media screen and (max-width: 768px) {
+    .header__links {
+        top: 35px;
+    }
+}
